@@ -1,14 +1,19 @@
 .friend-list {
     list-style: none;
     padding: 0;
-   display: inline;
-    align-items: center;
-}
+    counter-reset: none;
+    text-align: center;
+    width: 200px;
+    flex-direction: column-reverse;
+  }
   
   .item {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
   }
   
   .status {
@@ -21,6 +26,9 @@
   
   .online {
     background-color: green;
+    width: 10px;
+   height: 10px;
+    border-radius: 5;
   }
   
   .offline {
