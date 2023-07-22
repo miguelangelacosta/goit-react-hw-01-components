@@ -1,16 +1,16 @@
 import React from "react";
-import Profile from "./Profile";
+import Profile from "./Profile/Profile";
 import user from '../json/user.json';
-import Statistics from "./Statistics";
+import Statistics from "./statistics/Statistics";
 import data from '../json/data.json';
-import FriendList from './FriendList';
+import FriendList from './Friendlist/FriendList';
 import friends from '../json/friends.json';
-import TransactionHistory from './TransactionHistory';
+import TransactionHistory from './TransactionaHistory/TransactionHistory';
 import transactions from '../json/transactions.json';
 
 const App = () => {
   return (
-    <container>
+    <div>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -24,12 +24,11 @@ const App = () => {
       <Statistics stats={data} />
 
       <div>
-        <h1>Lista de Amigos</h1>
         <FriendList friends={friends} />
       </div>
 
       <TransactionHistory items={transactions} />
-    </container>
+    </div>
   );
 };
 

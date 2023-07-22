@@ -30,14 +30,16 @@ width: 400px;
     display: flex;
     flex-direction: column; /* Cambiamos la dirección del contenido a columna para mostrar etiqueta y porcentaje en líneas separadas */
     align-items: center;
-    margin-right: 10px; /* Agregamos un margen derecho para separar los elementos */
-    border: 1px solid #ccc;
+    margin-right: auto; /* Agregamos un margen derecho para separar los elementos */
+    border: 1px solid #cccccc;
     padding: 10px;
   }
   
   .label {
     font-weight: bold;
-    color: #555;
+    color: #555555;
+    width: 50px;
+    height: 30px;
   }
   
   .percentage {

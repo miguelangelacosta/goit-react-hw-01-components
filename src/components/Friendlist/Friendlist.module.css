@@ -5,6 +5,7 @@
     text-align: center;
     width: 200px;
     flex-direction: column-reverse;
+    align-items: center;
   }
   
   .item {
@@ -22,6 +23,7 @@
     height: 10px;
     border-radius: 50%;
     margin-right: 5px;
+    box-shadow: #ccc;
   }
   
   .online {
@@ -33,6 +35,9 @@
   
   .offline {
     background-color: red;
+    width: 10px;
+    height: 10px;
+     border-radius: 5;
   }
   
   .avatar {
